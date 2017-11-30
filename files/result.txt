@@ -1,0 +1,15 @@
+{"ip":"78.123.67.3","url":"https://en.wikipedia.org/wiki/Main_Page","timeStamp":"Nov 26, 2017 12:24:43 AM","timeSpent":200}
+{"ip":"78.123.67.3","url":"https://en.wikipedia.org/wiki/World_War_I","timeStamp":"Nov 26, 2017 12:24:46 AM","timeSpent":1600}
+{"ip":"213.180.195.231","url":"https://en.wikipedia.org/wiki/Main_Page","timeStamp":"Nov 26, 2017 12:24:45 AM","timeSpent":195}
+{"ip":"213.180.195.231","url":"https://en.wikipedia.org/wiki/Facebook","timeStamp":"Nov 26, 2017 12:28:00 AM","timeSpent":786}
+{"ip":"40.77.167.48","url":"https://en.wikipedia.org/wiki/Main_Page","timeStamp":"Nov 26, 2017 12:24:45 AM","timeSpent":378}
+{"ip":"40.77.167.48","url":"https://en.wikipedia.org/wiki/Soviet_Union","timeStamp":"Nov 26, 2017 12:30:45 AM","timeSpent":1000}
+{"ip":"40.77.167.48","url":"https://en.wikipedia.org/wiki/Kim_Kardashian","timeStamp":"Nov 26, 2017 2:48:07 AM","timeSpent":500}
+{"ip":"40.77.167.48","url":"https://en.wikipedia.org/wiki/Kim_Kardashian","timeStamp":"Nov 27, 2017 1:00:25 PM","timeSpent":678}
+{"ip":"66.249.69.123","url":"https://en.wikipedia.org/wiki/Main_Page","timeStamp":"Nov 26, 2017 12:24:45 AM","timeSpent":120}
+{"ip":"66.249.69.123","url":"https://en.wikipedia.org/wiki/Soviet_Union","timeStamp":"Nov 26, 2017 12:26:45 AM","timeSpent":693}
+{"ip":"157.55.39.105","url":"https://en.wikipedia.org/wiki/World_War_I","timeStamp":"Nov 26, 2017 12:26:48 AM","timeSpent":1284}
+{"ip":"157.55.39.105","url":"https://en.wikipedia.org/wiki/Nikita_Khrushchev","timeStamp":"Nov 26, 2017 1:20:39 AM","timeSpent":600}
+{"ip":"157.55.39.105","url":"https://en.wikipedia.org/wiki/World_War_II","timeStamp":"Nov 26, 2017 12:50:29 AM","timeSpent":1090}
+{"ip":"157.55.39.105","url":"https://en.wikipedia.org/wiki/Soviet_Union","timeStamp":"Nov 26, 2017 1:05:29 AM","timeSpent":780}
+{"ip":"157.55.39.105","url":"https://en.wikipedia.org/wiki/Russian_Civil_War","timeStamp":"Nov 26, 2017 1:32:05 AM","timeSpent":600}

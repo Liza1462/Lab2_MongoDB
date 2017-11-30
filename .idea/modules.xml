@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Lab2_MongoDB.iml" filepath="$PROJECT_DIR$/.idea/modules/Lab2_MongoDB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Lab2_MongoDB_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Lab2_MongoDB_main.iml" group="Lab2_MongoDB" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Lab2_MongoDB_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Lab2_MongoDB_test.iml" group="Lab2_MongoDB" />
+    </modules>
+  </component>
+</project>
