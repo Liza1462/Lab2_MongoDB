@@ -1,4 +1,4 @@
-package parcerTest;
+package parcertest;
 
 
 import org.junit.Test;

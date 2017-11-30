@@ -11,6 +11,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Lab2_MongoDB_main" />
     <orderEntry type="library" name="Gradle: org.mongodb:mongodb-driver:3.5.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.2.4" level="project" />
     <orderEntry type="library" name="Gradle: junit:junit:4.12" level="project" />
     <orderEntry type="library" name="Gradle: org.mongodb:mongodb-driver-core:3.5.0" level="project" />
     <orderEntry type="library" name="Gradle: org.mongodb:bson:3.5.0" level="project" />

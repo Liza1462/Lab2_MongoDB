@@ -1,4 +1,4 @@
-package queriesTest;
+package queriestest;
 
 import com.mongodb.client.MongoCollection;
 
