@@ -18,7 +18,7 @@ import static org.junit.Assert.*;
 public class TestLogDB {
 
     public static LogsDB testdb = new LogsDB("logDB");
-    public static  MongoCollection<org.bson.Document> logs = testdb.getCollection("testLogs1");
+    public static  MongoCollection<Document> logs = testdb.getCollection("testLogs1");
     public static DBCollection logs2 = testdb.getCollectionMR("testLogs1");
 
     public static void insert() throws IOException{
@@ -107,13 +107,13 @@ public class TestLogDB {
         assertEquals(rightRes, LogsDB.getIPMR(logs2));
     }
 
-//    @Test
-//    public void testGetURLMR(){
-//        List <String> rightRes = new ArrayList<>();
-//        rightRes.add("https://en.wikipedia.org/wiki/Kim_Kardashian date: Mon Nov 27 2017 count: 1.0");
-//        rightRes.add("https://en.wikipedia.org/wiki/Main_Page date: Sun Nov 26 2017 count: 2.0");
-//        rightRes.add("https://en.wikipedia.org/wiki/Nikita_Khrushchev date: Sun Nov 26 2017 count: 1.0");
-//        rightRes.add("https://en.wikipedia.org/wiki/Soviet_Union date: Sun Nov 26 2017 count: 2.0");
-//        assertEquals(rightRes, LogsDB.getURLMR(logs2));
-//    }
+    @Test
+    public void testGetURLMR(){
+        List <String> rightRes = new ArrayList<>();
+        rightRes.add("https://en.wikipedia.org/wiki/Kim_Kardashian date: Mon Nov 27 2017 count: 1.0");
+        rightRes.add("https://en.wikipedia.org/wiki/Main_Page date: Sun Nov 26 2017 count: 2.0");
+        rightRes.add("https://en.wikipedia.org/wiki/Nikita_Khrushchev date: Sun Nov 26 2017 count: 1.0");
+        rightRes.add("https://en.wikipedia.org/wiki/Soviet_Union date: Sun Nov 26 2017 count: 2.0");
+        assertEquals(rightRes, LogsDB.getURLMR(logs2));
+    }
 }
