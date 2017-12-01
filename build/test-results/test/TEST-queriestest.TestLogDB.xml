@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="queriestest.TestLogDB" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-12-01T01:36:03" hostname="DESKTOP-3FQVONN" time="0.241">
+<testsuite name="queriestest.TestLogDB" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-12-01T01:43:12" hostname="DESKTOP-3FQVONN" time="0.241">
   <properties/>
-  <testcase name="testGetURLMR" classname="queriestest.TestLogDB" time="0.092"/>
-  <testcase name="testGetIP" classname="queriestest.TestLogDB" time="0.093"/>
-  <testcase name="testGetIPMR" classname="queriestest.TestLogDB" time="0.024"/>
-  <testcase name="testGetTime" classname="queriestest.TestLogDB" time="0.016"/>
+  <testcase name="testGetURLMR" classname="queriestest.TestLogDB" time="0.09"/>
+  <testcase name="testGetIP" classname="queriestest.TestLogDB" time="0.085"/>
+  <testcase name="testGetIPMR" classname="queriestest.TestLogDB" time="0.019"/>
+  <testcase name="testGetTime" classname="queriestest.TestLogDB" time="0.024"/>
   <testcase name="testGetURL" classname="queriestest.TestLogDB" time="0.002"/>
-  <testcase name="testGetVisitsCount" classname="queriestest.TestLogDB" time="0.014"/>
+  <testcase name="testGetVisitsCount" classname="queriestest.TestLogDB" time="0.021"/>
   <system-out><![CDATA[Connected to DB
 ]]></system-out>
-  <system-err><![CDATA[Dec 01, 2017 3:36:03 AM com.mongodb.diagnostics.logging.JULLogger log
+  <system-err><![CDATA[Dec 01, 2017 3:43:12 AM com.mongodb.diagnostics.logging.JULLogger log
 INFO: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
-Dec 01, 2017 3:36:03 AM com.mongodb.diagnostics.logging.JULLogger log
+Dec 01, 2017 3:43:12 AM com.mongodb.diagnostics.logging.JULLogger log
 INFO: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
-Dec 01, 2017 3:36:03 AM com.mongodb.diagnostics.logging.JULLogger log
-INFO: Opened connection [connectionId{localValue:2, serverValue:138}] to localhost:27017
-Dec 01, 2017 3:36:03 AM com.mongodb.diagnostics.logging.JULLogger log
-INFO: Opened connection [connectionId{localValue:1, serverValue:139}] to localhost:27017
-Dec 01, 2017 3:36:03 AM com.mongodb.diagnostics.logging.JULLogger log
-INFO: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 4, 10]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, roundTripTimeNanos=1366304}
-Dec 01, 2017 3:36:03 AM com.mongodb.diagnostics.logging.JULLogger log
-INFO: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 4, 10]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, roundTripTimeNanos=803398}
-Dec 01, 2017 3:36:03 AM com.mongodb.diagnostics.logging.JULLogger log
-INFO: Opened connection [connectionId{localValue:3, serverValue:140}] to localhost:27017
-Dec 01, 2017 3:36:03 AM com.mongodb.diagnostics.logging.JULLogger log
-INFO: Opened connection [connectionId{localValue:4, serverValue:141}] to localhost:27017
+Dec 01, 2017 3:43:12 AM com.mongodb.diagnostics.logging.JULLogger log
+INFO: Opened connection [connectionId{localValue:2, serverValue:153}] to localhost:27017
+Dec 01, 2017 3:43:12 AM com.mongodb.diagnostics.logging.JULLogger log
+INFO: Opened connection [connectionId{localValue:1, serverValue:152}] to localhost:27017
+Dec 01, 2017 3:43:12 AM com.mongodb.diagnostics.logging.JULLogger log
+INFO: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 4, 10]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, roundTripTimeNanos=825634}
+Dec 01, 2017 3:43:12 AM com.mongodb.diagnostics.logging.JULLogger log
+INFO: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 4, 10]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, roundTripTimeNanos=1274729}
+Dec 01, 2017 3:43:12 AM com.mongodb.diagnostics.logging.JULLogger log
+INFO: Opened connection [connectionId{localValue:3, serverValue:154}] to localhost:27017
+Dec 01, 2017 3:43:12 AM com.mongodb.diagnostics.logging.JULLogger log
+INFO: Opened connection [connectionId{localValue:4, serverValue:155}] to localhost:27017
 ]]></system-err>
 </testsuite>
