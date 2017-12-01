@@ -125,8 +125,8 @@
       <file leaf-file-name="TestLogDB.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/queriestest/TestLogDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,7 +137,7 @@
       <file leaf-file-name="TestParcer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/parcertest/TestParcer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-167">
+            <state relative-caret-position="204">
               <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -628,7 +628,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestLogDB">
+  <component name="RunManager" selected="JUnit.TestLogDB.testGetIPMR">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -650,61 +650,7 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="Lab2_MongoDB [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-    </configuration>
-    <configuration name="Lab2_MongoDB [check]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="check" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-    </configuration>
-    <configuration name="Lab2_MongoDB [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-    </configuration>
-    <configuration name="TestLogDB" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestLogDB.testGetIP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="queriestest.*" />
@@ -716,8 +662,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="queriestest" />
       <option name="MAIN_CLASS_NAME" value="queriestest.TestLogDB" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="testGetIP" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -729,7 +675,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="TestLogDB.testGetURLMR" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestLogDB.testGetIPMR" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="queriestest.*" />
@@ -741,7 +687,82 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="queriestest" />
       <option name="MAIN_CLASS_NAME" value="queriestest.TestLogDB" />
-      <option name="METHOD_NAME" value="testGetURLMR" />
+      <option name="METHOD_NAME" value="testGetIPMR" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestLogDB.testGetTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="queriestest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Lab2_MongoDB_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="queriestest" />
+      <option name="MAIN_CLASS_NAME" value="queriestest.TestLogDB" />
+      <option name="METHOD_NAME" value="testGetTime" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestLogDB.testGetURL" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="queriestest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Lab2_MongoDB_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="queriestest" />
+      <option name="MAIN_CLASS_NAME" value="queriestest.TestLogDB" />
+      <option name="METHOD_NAME" value="testGetURL" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestLogDB.testGetVisitsCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="queriestest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Lab2_MongoDB_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="queriestest" />
+      <option name="MAIN_CLASS_NAME" value="queriestest.TestLogDB" />
+      <option name="METHOD_NAME" value="testGetVisitsCount" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -815,19 +836,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TestLogDB" />
-      <item index="1" class="java.lang.String" itemvalue="Gradle.Lab2_MongoDB [check]" />
-      <item index="2" class="java.lang.String" itemvalue="Gradle.Lab2_MongoDB [test]" />
-      <item index="3" class="java.lang.String" itemvalue="Gradle.Lab2_MongoDB [build]" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestLogDB.testGetURLMR" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TestLogDB.testGetIP" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestLogDB.testGetURL" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestLogDB.testGetTime" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestLogDB.testGetVisitsCount" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestLogDB.testGetIPMR" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestLogDB" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestLogDB.testGetURLMR" />
-        <item index="2" class="java.lang.String" itemvalue="Gradle.Lab2_MongoDB [build]" />
-        <item index="3" class="java.lang.String" itemvalue="Gradle.Lab2_MongoDB [test]" />
-        <item index="4" class="java.lang.String" itemvalue="Gradle.Lab2_MongoDB [check]" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestLogDB.testGetIPMR" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestLogDB.testGetVisitsCount" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestLogDB.testGetTime" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestLogDB.testGetURL" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestLogDB.testGetIP" />
       </list>
     </recent_temporary>
   </component>
@@ -848,35 +869,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Lab2_MongoDB_[check] - 2017.12.01 at 04h 33m 58s.xml">
-      <configuration name="Lab2_MongoDB [check]" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="Lab2_MongoDB_[test] - 2017.12.01 at 04h 34m 01s.xml">
-      <configuration name="Lab2_MongoDB [test]" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestLogDB - 2017.12.01 at 04h 32m 41s.xml">
-      <configuration name="TestLogDB" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestLogDB - 2017.12.01 at 04h 33m 01s.xml">
-      <configuration name="TestLogDB" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestLogDB - 2017.12.01 at 04h 33m 43s.xml">
-      <configuration name="TestLogDB" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestLogDB - 2017.12.01 at 04h 33m 48s.xml">
-      <configuration name="TestLogDB" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestLogDB - 2017.12.01 at 04h 33m 51s.xml">
-      <configuration name="TestLogDB" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestLogDB - 2017.12.01 at 04h 33m 53s.xml">
-      <configuration name="TestLogDB" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestLogDB - 2017.12.01 at 04h 34m 25s.xml">
       <configuration name="TestLogDB" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestLogDB_testGetURLMR - 2017.12.01 at 04h 34m 20s.xml">
-      <configuration name="TestLogDB.testGetURLMR" configurationId="JUnit" />
+    <history-entry file="TestLogDB - 2017.12.01 at 04h 41m 12s.xml">
+      <configuration name="TestLogDB" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestLogDB - 2017.12.01 at 04h 42m 13s.xml">
+      <configuration name="TestLogDB" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestLogDB_testGetIP - 2017.12.01 at 04h 42m 22s.xml">
+      <configuration name="TestLogDB.testGetIP" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestLogDB_testGetIPMR - 2017.12.01 at 04h 42m 32s.xml">
+      <configuration name="TestLogDB.testGetIPMR" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestLogDB_testGetTime - 2017.12.01 at 04h 42m 27s.xml">
+      <configuration name="TestLogDB.testGetTime" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestLogDB_testGetURL - 2017.12.01 at 04h 42m 25s.xml">
+      <configuration name="TestLogDB.testGetURL" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestLogDB_testGetVisitsCount - 2017.12.01 at 04h 42m 30s.xml">
+      <configuration name="TestLogDB.testGetVisitsCount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestLogDB_testInsert - 2017.12.01 at 04h 42m 19s.xml">
+      <configuration name="TestLogDB.testInsert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestParcer - 2017.12.01 at 04h 41m 18s.xml">
+      <configuration name="TestParcer" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -1189,16 +1210,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/parcertest/TestParcer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-167">
-          <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/parcer/Parcer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1229,10 +1240,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/parcertest/TestParcer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/queriestest/TestLogDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

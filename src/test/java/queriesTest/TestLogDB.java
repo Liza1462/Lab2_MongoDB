@@ -29,6 +29,7 @@ public class TestLogDB {
     @Test
     public void testInsert() throws IOException{
         logs.drop();
+        logs2.drop();
 
        LogsDB.insertFromJson("files/testRes", logs);
 
