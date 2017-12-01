@@ -96,19 +96,19 @@ public class LogsDB {
         return urls;
     }
 
-        // Выдать упорядоченный список URL ресурсов, посещенных в заданный временной период.
-    public static List<String> getURLs(String startDate, String endDate, MongoCollection<Document> logs) throws ParseException{
-        List <String> urls = new ArrayList<>();
-        DateFormat format = new SimpleDateFormat("dd/MMM/yyyy:HH:mm:ss");
-        Date sd = format.parse(startDate);
-        Date ed = format.parse(endDate);
-        System.out.println(sd);
-        System.out.println(ed);
-        for (Document log : logs.find(and(gte("timeStamp", sd), lte("timeStamp", ed))).sort(Sorts.ascending("url"))){
-            urls.add(log.getString("url"));
-        }
-        return urls;
-    }
+//        // Выдать упорядоченный список URL ресурсов, посещенных в заданный временной период.
+//    public static List<String> getURLs(String startDate, String endDate, MongoCollection<Document> logs) throws ParseException{
+//        List <String> urls = new ArrayList<>();
+//        DateFormat format = new SimpleDateFormat("dd/MMM/yyyy:HH:mm:ss");
+//        Date sd = format.parse(startDate);
+//        Date ed = format.parse(endDate);
+//        System.out.println(sd);
+//        System.out.println(ed);
+//        for (Document log : logs.find(and(gte("timeStamp", sd), lte("timeStamp", ed))).sort(Sorts.ascending("url"))){
+//            urls.add(log.getString("url"));
+//        }
+//        return urls;
+//    }
 //Выдать список URL ресурсов с указанием суммарной длительности
 //посещения каждого ресурса, упорядоченный по убыванию.
     public static List<String> getTime(DBCollection collection){
