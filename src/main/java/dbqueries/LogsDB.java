@@ -28,17 +28,16 @@ public class LogsDB {
     }
 
     public static void main(String[] args) throws IOException{
-        connect("logDB");
-        MongoCollection<Document> coll = database.getCollection("testLogs1");
-        DBCollection collMR = db.getCollection("testLogs1");
-
+//        connect("logDB");
+//        MongoCollection<Document> coll = database.getCollection("testLogs1");
+//        DBCollection collMR = db.getCollection("testLogs1");
 //        insertFromJson("files/result.txt", coll);
 //        getIPs("https://en.wikipedia.org/wiki/Kim_Kardashian");
 //        getURLs("157.55.39.105");
 //        getIPMR();
 //        getURLMR();
 //        getVisitsCount();
-        getTime(collMR);
+//        getTime(collMR);
     }
 
     public static MongoCollection<Document> getCollection( String collectionName){

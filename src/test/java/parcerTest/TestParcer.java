@@ -1,7 +1,5 @@
 package parcertest;
 
-
-import gherkin.lexer.Pa;
 import org.junit.Test;
 
 import java.io.FileWriter;
