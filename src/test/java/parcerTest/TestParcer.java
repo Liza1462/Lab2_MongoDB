@@ -18,8 +18,6 @@ import static org.junit.Assert.*;
 
 public class TestParcer {
 
-    public List<String> jsonList;
-
     @Test
     public void readingTest () throws ParseException, IOException{
         String testStr1 = "78.123.67.3, https://en.wikipedia.org/wiki/Main_Page, 26/Nov/2017:00:24:43 +0200, 200";
@@ -46,7 +44,8 @@ public class TestParcer {
         String testJson2 = "{\"ip\":\"78.123.67.3\",\"url\":\"https://en.wikipedia.org/wiki/World_War_I\"," +
                 "\"timeStamp\":\"Nov 26, 2017 12:24:46 AM\",\"timeSpent\":1600}";
 
-        jsonList = Parcer.convertToJson(Arrays.asList(testStr1, testStr2));
+        List<String> jsonList = Parcer.convertToJson(Arrays.asList(testStr1, testStr2));
+        System.out.print(jsonList);
         List<String> rigthResult = Arrays.asList(testJson1, testJson2);
 
         assertEquals(jsonList, rigthResult);
@@ -54,8 +53,14 @@ public class TestParcer {
 
     @Test
     public void writingTest() throws IOException{
+        List<String> jsonList = new ArrayList<>();
+        jsonList.add("IP, URL, timeStamp, timeSpent");
+        jsonList.add("{\"ip\":\"78.123.67.3\",\"url\":\"https://en.wikipedia.org/wiki/Main_Page\",\"timeStamp\":" +
+                "\"Nov 26, 2017 12:24:43 AM\",\"timeSpent\":200}");
+        jsonList.add("{\"ip\":\"78.123.67.3\",\"url\":\"https://en.wikipedia.org/wiki/World_War_I\",\"timeStamp\":" +
+                "\"Nov 26, 2017 12:24:46 AM\",\"timeSpent\":1600}");
         Parcer.write(jsonList, "writeTest.txt");
-        assertEquals(jsonList, Parcer.read("writeTest.txt"));
+        assertEquals(jsonList.subList(1, jsonList.size()), Parcer.read("writeTest.txt"));
     }
 
 }
