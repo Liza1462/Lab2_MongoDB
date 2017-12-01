@@ -3,10 +3,8 @@ package queriestest;
 import com.mongodb.DBCollection;
 import com.mongodb.client.MongoCollection;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
-import com.mongodb.client.model.Sorts;
 import dbqueries.LogsDB;
 import org.bson.Document;
 import org.junit.Test;
@@ -15,10 +13,7 @@ import java.io.IOException;
 
 import java.util.List;
 
-import static com.mongodb.client.model.Filters.eq;
 import static org.junit.Assert.*;
-
-
 
 public class TestLogDB {
 
@@ -41,14 +36,12 @@ public class TestLogDB {
         String s6 = "{\"ip\":\"40.77.167.48\",\"url\":\"https://en.wikipedia.org/wiki/Soviet_Union\",\"" +
                 "timeStamp\":\"Nov 26, 2017 12:30:45 AM\",\"timeSpent\":1000}\n";
 
-//        List<String> inStr = new ArrayList<>(Arrays.asList(s1, s2, s3, s4, s5, s6));
-
-        logs.insertOne(org.bson.Document.parse(s1));
-        logs.insertOne(org.bson.Document.parse(s2));
-        logs.insertOne(org.bson.Document.parse(s3));
-        logs.insertOne(org.bson.Document.parse(s4));
-        logs.insertOne(org.bson.Document.parse(s5));
-        logs.insertOne(org.bson.Document.parse(s6));
+        logs.insertOne(Document.parse(s1));
+        logs.insertOne(Document.parse(s2));
+        logs.insertOne(Document.parse(s3));
+        logs.insertOne(Document.parse(s4));
+        logs.insertOne(Document.parse(s5));
+        logs.insertOne(Document.parse(s6));
     }
 
     @Test
@@ -63,6 +56,11 @@ public class TestLogDB {
             res.add(log.toJson());
         }
         assertEquals(res.size(), 6);
+    }
+
+    @Test
+    public void getAllElementsTest(){
+        assertEquals(LogsDB.getAllCollectionElements(logs).size(), 6);
     }
 
     @Test
@@ -118,9 +116,4 @@ public class TestLogDB {
 //        rightRes.add("https://en.wikipedia.org/wiki/Soviet_Union date: Sun Nov 26 2017 count: 2.0");
 //        assertEquals(rightRes, LogsDB.getURLMR(logs2));
 //    }
-
-
-
-
-
 }

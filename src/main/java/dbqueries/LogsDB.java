@@ -70,11 +70,12 @@ public class LogsDB {
         }
     }
 
-    public static void insert(List<String> jsons, MongoCollection<Document> logs){
-        jsons.forEach(line -> {
-            Document doc = Document.parse(line);
-            logs.insertOne(doc);
-        });
+    public static List<String> getAllCollectionElements(MongoCollection<Document> logs){
+        List <String> res = new ArrayList<>();
+        for (Document log : logs.find()){
+            res.add(log.values().toString());
+        }
+        return res;
     }
 
         // Выдать упорядоченный список IP-адресов пользователей, посетивших ресурс с заданным URL.

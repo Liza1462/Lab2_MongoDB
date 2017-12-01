@@ -12,16 +12,16 @@ import java.util.stream.Collectors;
 
 public class Parcer {
 
-    public static void main(String[] args) throws IOException, ParseException {
-        if (args.length != 2) {
-            System.out.println("Wrong arguments");
-        } else {
-            List<String> logs = read(args[0]);
-            if (logs != null) {
-                write(convertToJson(logs), args[1]);
-            }
-        }
-    }
+//    public static void main(String[] args) throws IOException, ParseException {
+//        if (args.length != 2) {
+//            System.out.println("Wrong arguments");
+//        } else {
+//            List<String> logs = read(args[0]);
+//            if (logs != null) {
+//                write(convertToJson(logs), args[1]);
+//            }
+//        }
+//    }
 
 //    public static void main(String[] args) throws IOException, ParseException {
 //        write(convertToJson(read("files/logs.csv")), "files/result.txt");
