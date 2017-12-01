@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="parcertest.TestParcer" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-12-01T01:43:12" hostname="DESKTOP-3FQVONN" time="0.123">
+<testsuite name="parcertest.TestParcer" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-12-01T02:33:57" hostname="DESKTOP-3FQVONN" time="0.115">
   <properties/>
-  <testcase name="readingTest" classname="parcertest.TestParcer" time="0.017"/>
-  <testcase name="writingTest" classname="parcertest.TestParcer" time="0.009"/>
-  <testcase name="parcingTest" classname="parcertest.TestParcer" time="0.093"/>
+  <testcase name="readingTest" classname="parcertest.TestParcer" time="0.013"/>
+  <testcase name="writingTest" classname="parcertest.TestParcer" time="0.007"/>
+  <testcase name="parcingTest" classname="parcertest.TestParcer" time="0.094"/>
   <system-out><![CDATA[[{"ip":"78.123.67.3","url":"https://en.wikipedia.org/wiki/Main_Page","timeStamp":"Nov 26, 2017 12:24:43 AM","timeSpent":200}, {"ip":"78.123.67.3","url":"https://en.wikipedia.org/wiki/World_War_I","timeStamp":"Nov 26, 2017 12:24:46 AM","timeSpent":1600}]]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

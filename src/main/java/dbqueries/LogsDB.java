@@ -27,7 +27,7 @@ public class LogsDB {
         connect(databaseName);
     }
 
-    public static void main(String[] args) throws IOException{
+//    public static void main(String[] args) throws IOException{
 //        connect("logDB");
 //        MongoCollection<Document> coll = database.getCollection("testLogs1");
 //        DBCollection collMR = db.getCollection("testLogs1");
@@ -38,7 +38,7 @@ public class LogsDB {
 //        getURLMR();
 //        getVisitsCount();
 //        getTime(collMR);
-    }
+//    }
 
     public static MongoCollection<Document> getCollection( String collectionName){
          return database.getCollection(collectionName);
@@ -68,6 +68,13 @@ public class LogsDB {
         } catch (FileNotFoundException ex){
             System.out.println("File not found");
         }
+    }
+
+    public static void insert(List<String> jsons, MongoCollection<Document> logs){
+        jsons.forEach(line -> {
+            Document doc = Document.parse(line);
+            logs.insertOne(doc);
+        });
     }
 
         // Выдать упорядоченный список IP-адресов пользователей, посетивших ресурс с заданным URL.
