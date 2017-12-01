@@ -28,15 +28,17 @@ public class LogsDB {
     }
 
     public static void main(String[] args) throws IOException{
-//        connect("logDB");
-//        MongoCollection<Document> coll = database.getCollection("testLogs1");
+        connect("logDB");
+        MongoCollection<Document> coll = database.getCollection("testLogs1");
+        DBCollection collMR = db.getCollection("testLogs1");
+
 //        insertFromJson("files/result.txt", coll);
 //        getIPs("https://en.wikipedia.org/wiki/Kim_Kardashian");
 //        getURLs("157.55.39.105");
 //        getIPMR();
 //        getURLMR();
 //        getVisitsCount();
-//        getTime();
+        getTime(collMR);
     }
 
     public static MongoCollection<Document> getCollection( String collectionName){
@@ -102,7 +104,7 @@ public class LogsDB {
     }
 //Выдать список URL ресурсов с указанием суммарной длительности
 //посещения каждого ресурса, упорядоченный по убыванию.
-    public static Map<String, String> getTime(DBCollection collection){
+    public static List<String> getTime(DBCollection collection){
         String map = "function () { emit(this.url, this.timeSpent);}";
         String reduce = "function (key, values) { "+
                 " totalTime = 0; "+
@@ -111,29 +113,28 @@ public class LogsDB {
         MapReduceCommand cmd = new MapReduceCommand(collection, map, reduce,
                 null, MapReduceCommand.OutputType.INLINE, null);
         MapReduceOutput out = collection.mapReduce(cmd);
-        Map<String, String> result = new HashMap<>();
+        List<String> result = new ArrayList<>();
         for (DBObject o : out.results()) {
-            result.put(o.toMap().values().toArray()[0].toString(),
-                   o.toMap().values().toArray()[1].toString());
+            result.add(o.toMap().values().toArray()[0].toString() +" : "
+                    + o.toMap().values().toArray()[1].toString());
         }
         return result;
     }
 
 //Выдать список URL ресурсов с указанием суммарного количества
 //посещений каждого ресурса, упорядоченный по убыванию.
-    public static Map<String, String> getVisitsCount(DBCollection collection){
+    public static List<String> getVisitsCount(DBCollection collection){
         String map = "function () { emit(this.url, 1);}";
         String reduce = "function (key, values) { "+
                 " visitsCount = 0; "+
                 " for (var i in values) { visitsCount += values[i]} "+
-                " return {'count' : visitsCount} }";
+                " return visitsCount }";
         MapReduceCommand cmd = new MapReduceCommand(collection, map, reduce,
                 null, MapReduceCommand.OutputType.INLINE, null);
         MapReduceOutput out = collection.mapReduce(cmd);
-        Map<String, String> result = new HashMap<>();
+        List<String> result = new ArrayList<>();
         for (DBObject o : out.results()) {
-            result.put(o.toMap().values().toArray()[0].toString(),
-                    o.toMap().values().toArray()[1].toString());
+            result.add(o.toMap().values().toArray()[0].toString() + " : " + o.toMap().values().toArray()[1].toString());
         }
         return result;
     }
@@ -141,8 +142,8 @@ public class LogsDB {
 //    Выдать список IP-адресов c указанием суммарного количества и суммарной
 //    длительности посещений ресурсов, упорядоченный по адресу, убыванию
 //    количества и убыванию длительности.
-    public static List<Map<String, String>> getIPMR(DBCollection collection){
-        String map = "function () { emit({ip: this.ip, url:this.url}, {time:this.timeSpent, count: 1} );}";
+    public static List<String> getIPMR(DBCollection collection){
+        String map = "function () { emit(this.ip, {time:this.timeSpent, count: 1} );}";
         String reduce = "function (key, values) { "+
                 " count = 0; " +
                 " time = 0;"+
@@ -153,14 +154,11 @@ public class LogsDB {
         MapReduceCommand cmd = new MapReduceCommand(collection, map, reduce,
                 null, MapReduceCommand.OutputType.INLINE, null);
         MapReduceOutput out = collection.mapReduce(cmd);
-        List<Map<String, String>> result = new ArrayList<>();
+        List<String> result = new ArrayList<>();
         for (DBObject o : out.results()) {
-            Map<String, String> values = new HashMap<>();
-            values.put("ip", o.toMap().values().toArray()[0].toString().split("\"")[3]);
-            values.put("url", o.toMap().values().toArray()[0].toString().split("\"")[7]);
-            values.put("time", o.toMap().values().toArray()[1].toString().split(" ")[3]);
-            values.put("count", o.toMap().values().toArray()[1].toString().split(" ")[7].replaceAll("}", ""));
-            result.add(values);
+            result.add(o.toMap().values().toArray()[0].toString() + "  totalTime: "+
+                    o.toMap().values().toArray()[1].toString().split(" ")[3] + ", totalCount: " +
+                    o.toMap().values().toArray()[1].toString().split(" ")[7].replaceAll("}", ""));
         }
         return result;
     }
@@ -168,7 +166,7 @@ public class LogsDB {
 //    Выдать список URL ресурсов с указанием количества посещений каждого
 //    ресурса в день за заданный период, упорядоченный по URL ресурса и
 //    убыванию количества посещений.
-    public static List<Map<String, String>> getURLMR(DBCollection collection){
+    public static List<String> getURLMR(DBCollection collection){
         String map = "function () { " +
                 "let date = new Date(this.timeStamp.split(' ')).toDateString();" +
                 "emit({url: this.url, date: date}, {count: 1} );}";
@@ -180,13 +178,11 @@ public class LogsDB {
         MapReduceCommand cmd = new MapReduceCommand(collection, map, reduce,
                 null, MapReduceCommand.OutputType.INLINE, null);
         MapReduceOutput out = collection.mapReduce(cmd);
-        List<Map<String, String>> result = new ArrayList<>();
+        List<String> result = new ArrayList<>();
         for (DBObject o : out.results()) {
-            Map<String, String> values = new HashMap<>();
-            values.put("url", o.toMap().values().toArray()[0].toString().split("\"")[3]);
-            values.put("date", o.toMap().values().toArray()[0].toString().split("\"")[7]);
-            values.put("count", o.toMap().values().toArray()[1].toString().split(": ")[1].replaceAll("}", ""));
-            result.add(values);
+            result.add(o.toMap().values().toArray()[0].toString().split("\"")[3] + " date: "+
+                    o.toMap().values().toArray()[0].toString().split("\"")[7]+ " count: "+
+                    o.toMap().values().toArray()[1].toString().split(": ")[1].replaceAll("}", ""));
         }
         return result;
     }

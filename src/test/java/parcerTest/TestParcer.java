@@ -1,6 +1,7 @@
 package parcertest;
 
 
+import gherkin.lexer.Pa;
 import org.junit.Test;
 
 import java.io.FileWriter;
@@ -16,6 +17,8 @@ import java.util.List;
 import static org.junit.Assert.*;
 
 public class TestParcer {
+
+    public List<String> jsonList;
 
     @Test
     public void readingTest () throws ParseException, IOException{
@@ -43,9 +46,16 @@ public class TestParcer {
         String testJson2 = "{\"ip\":\"78.123.67.3\",\"url\":\"https://en.wikipedia.org/wiki/World_War_I\"," +
                 "\"timeStamp\":\"Nov 26, 2017 12:24:46 AM\",\"timeSpent\":1600}";
 
-        List<String> result = Parcer.convertToJson(Arrays.asList(testStr1, testStr2));
+        jsonList = Parcer.convertToJson(Arrays.asList(testStr1, testStr2));
         List<String> rigthResult = Arrays.asList(testJson1, testJson2);
 
-        assertEquals(result, rigthResult);
+        assertEquals(jsonList, rigthResult);
     }
+
+    @Test
+    public void writingTest() throws IOException{
+        Parcer.write(jsonList, "writeTest.txt");
+        assertEquals(jsonList, Parcer.read("writeTest.txt"));
+    }
+
 }

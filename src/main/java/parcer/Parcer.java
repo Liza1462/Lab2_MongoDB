@@ -20,9 +20,12 @@ public class Parcer {
             if (logs != null) {
                 write(convertToJson(logs), args[1]);
             }
-//        write(convertToJson(read("files/logs.csv")), "files/result.txt");
         }
     }
+
+//    public static void main(String[] args) throws IOException, ParseException {
+//        write(convertToJson(read("files/logs.csv")), "files/result.txt");
+//    }
 
     public static List<String> read(String filename) throws IOException{
         try (BufferedReader in = new BufferedReader(new FileReader(new File(filename)))) {
