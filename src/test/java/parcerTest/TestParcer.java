@@ -38,9 +38,9 @@ public class TestParcer {
         String testStr1 = "78.123.67.3, https://en.wikipedia.org/wiki/Main_Page, 26/Nov/2017:00:24:43 +0200, 200";
         String testStr2 = "78.123.67.3, https://en.wikipedia.org/wiki/World_War_I, 26/Nov/2017:00:24:46 +0200, 1600";
         String testJson1 = "{\"ip\":\"78.123.67.3\",\"url\":\"https://en.wikipedia.org/wiki/Main_Page\"," +
-                "\"timeStamp\":\"Nov 26, 2017 12:24:43 AM\",\"timeSpent\":200}";
+                "\"timeStamp\":\"Nov 26, 2017, 12:24:43 AM\",\"timeSpent\":200}";
         String testJson2 = "{\"ip\":\"78.123.67.3\",\"url\":\"https://en.wikipedia.org/wiki/World_War_I\"," +
-                "\"timeStamp\":\"Nov 26, 2017 12:24:46 AM\",\"timeSpent\":1600}";
+                "\"timeStamp\":\"Nov 26, 2017, 12:24:46 AM\",\"timeSpent\":1600}";
 
         List<String> jsonList = Parcer.convertToJson(Arrays.asList(testStr1, testStr2));
         System.out.print(jsonList);
