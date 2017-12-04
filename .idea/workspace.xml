@@ -68,15 +68,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LogsDB.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LogsDB.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dbqueries/LogsDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="195" column="1" lean-forward="true" selection-start-line="195" selection-start-column="1" selection-end-line="195" selection-end-column="1" />
+            <state relative-caret-position="465">
+              <caret line="193" column="7" lean-forward="true" selection-start-line="193" selection-start-column="7" selection-end-line="193" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1513#1514#0" expanded="true" />
-                <element signature="e#1568#1569#0" expanded="true" />
+                <element signature="e#1525#1526#0" expanded="true" />
+                <element signature="e#1580#1581#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,15 +132,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestLogDB.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestLogDB.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/queriestest/TestLogDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1734">
-              <caret line="102" column="23" lean-forward="true" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="23" />
+            <state relative-caret-position="-1391">
+              <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2422#2423#0" expanded="true" />
-                <element signature="e#2499#2500#0" expanded="true" />
+                <element signature="e#2412#2413#0" expanded="true" />
+                <element signature="e#2489#2490#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -496,9 +496,9 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/parcer/Log.java" />
         <option value="$PROJECT_DIR$/src/main/java/parcer/Parcer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dbqueries/LogsDB.java" />
-        <option value="$PROJECT_DIR$/src/test/java/queriestest/TestLogDB.java" />
         <option value="$PROJECT_DIR$/src/test/java/parcertest/TestParcer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/queriestest/TestLogDB.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dbqueries/LogsDB.java" />
       </list>
     </option>
   </component>
@@ -1036,8 +1036,8 @@
           <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="2" selection-end-line="110" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1513#1514#0" expanded="true" />
-            <element signature="e#1568#1569#0" expanded="true" />
+            <element signature="e#1525#1526#0" expanded="true" />
+            <element signature="e#1580#1581#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1058,8 +1058,8 @@
           <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="117" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2422#2423#0" expanded="true" />
-            <element signature="e#2499#2500#0" expanded="true" />
+            <element signature="e#2412#2413#0" expanded="true" />
+            <element signature="e#2489#2490#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1080,8 +1080,8 @@
           <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1513#1514#0" expanded="true" />
-            <element signature="e#1568#1569#0" expanded="true" />
+            <element signature="e#1525#1526#0" expanded="true" />
+            <element signature="e#1580#1581#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1128,8 +1128,8 @@
           <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2422#2423#0" expanded="true" />
-            <element signature="e#2499#2500#0" expanded="true" />
+            <element signature="e#2412#2413#0" expanded="true" />
+            <element signature="e#2489#2490#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1207,8 +1207,8 @@
           <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2422#2423#0" expanded="true" />
-            <element signature="e#2499#2500#0" expanded="true" />
+            <element signature="e#2412#2413#0" expanded="true" />
+            <element signature="e#2489#2490#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1239,8 +1239,8 @@
           <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1513#1514#0" expanded="true" />
-            <element signature="e#1568#1569#0" expanded="true" />
+            <element signature="e#1525#1526#0" expanded="true" />
+            <element signature="e#1580#1581#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1347,18 +1347,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/queriestest/TestLogDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1734">
-          <caret line="102" column="23" lean-forward="true" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2422#2423#0" expanded="true" />
-            <element signature="e#2499#2500#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/parcertest/TestParcer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
@@ -1381,12 +1369,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dbqueries/LogsDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="195" column="1" lean-forward="true" selection-start-line="195" selection-start-column="1" selection-end-line="195" selection-end-column="1" />
+        <state relative-caret-position="465">
+          <caret line="193" column="7" lean-forward="true" selection-start-line="193" selection-start-column="7" selection-end-line="193" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1513#1514#0" expanded="true" />
-            <element signature="e#1568#1569#0" expanded="true" />
+            <element signature="e#1525#1526#0" expanded="true" />
+            <element signature="e#1580#1581#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/queriestest/TestLogDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1391">
+          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2412#2413#0" expanded="true" />
+            <element signature="e#2489#2490#0" expanded="true" />
           </folding>
         </state>
       </provider>

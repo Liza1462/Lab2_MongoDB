@@ -30,18 +30,18 @@ public class LogsDB {
         connect(databaseName);
     }
 
-    public static void main(String[] args) throws IOException, ParseException{
-        connect("logDB");
-        MongoCollection<Document> coll = database.getCollection("testLogs1");
-        DBCollection collMR = db.getCollection("testLogs1");
+//    public static void main(String[] args) throws IOException, ParseException{
+//        connect("logDB");
+//        MongoCollection<Document> coll = database.getCollection("testLogs1");
+//        DBCollection collMR = db.getCollection("testLogs1");
 //        insertFromJson("files/result.txt", coll);
 //        getIPs("https://en.wikipedia.org/wiki/Kim_Kardashian");
-        getURLs("Nov 27, 2017 13:00:25 PM", "Nov 27, 2017 13:00:25 ", coll);
+//        getURLs("Nov 27, 2017 13:00:25 PM", "Nov 27, 2017 13:00:25 ", coll);
 //        getIPMR();
 //        getURLMR();
 //        getVisitsCount();
 //        getTime(collMR);
-    }
+//    }
 
     public static MongoCollection<Document> getCollection( String collectionName){
          return database.getCollection(collectionName);
@@ -102,7 +102,6 @@ public class LogsDB {
         // Выдать упорядоченный список URL ресурсов, посещенных в заданный временной период.
     public static List<String> getURLs(String startDate, String endDate, MongoCollection<Document> logs) throws ParseException {
         List <String> urls = new ArrayList<>();
-        DateFormat format = new SimpleDateFormat("MMM dd, yyyy HH:mm:ss");
         for (Document log : logs.find(and(gte("timeStamp", startDate), lte("timeStamp", endDate))).
                 sort(Sorts.ascending("url"))){
             urls.add(log.getString("url"));
@@ -173,24 +172,24 @@ public class LogsDB {
 //    Выдать список URL ресурсов с указанием количества посещений каждого
 //    ресурса в день за заданный период, упорядоченный по URL ресурса и
 //    убыванию количества посещений.
-    public static List<String> getURLMR(DBCollection collection){
-        String map = "function () { " +
-                "let date = new Date(this.timeStamp.split(' ')).toDateString();" +
-                "emit({url: this.url, date: date}, {count: 1} );}";
-        String reduce = "function (key, values) { "+
-                " visitsCount = 0; " +
-                " for (var i in values) { " +
-                "visitsCount += values[i].count} " +
-                " return {'count' : visitsCount} }";
-        MapReduceCommand cmd = new MapReduceCommand(collection, map, reduce,
-                null, MapReduceCommand.OutputType.INLINE, null);
-        MapReduceOutput out = collection.mapReduce(cmd);
-        List<String> result = new ArrayList<>();
-        for (DBObject o : out.results()) {
-            result.add(o.toMap().values().toArray()[0].toString().split("\"")[3] + " date: "+
-                    o.toMap().values().toArray()[0].toString().split("\"")[7]+ " count: "+
-                    o.toMap().values().toArray()[1].toString().split(": ")[1].replaceAll("}", ""));
-        }
-        return result;
-    }
+//    public static List<String> getURLMR(DBCollection collection){
+//        String map = "function () { " +
+//                "let date = new Date(this.timeStamp.split(' ')).toDateString();" +
+//                "emit({url: this.url, date: date}, {count: 1} );}";
+//        String reduce = "function (key, values) { "+
+//                " visitsCount = 0; " +
+//                " for (var i in values) { " +
+//                "visitsCount += values[i].count} " +
+//                " return {'count' : visitsCount} }";
+//        MapReduceCommand cmd = new MapReduceCommand(collection, map, reduce,
+//                null, MapReduceCommand.OutputType.INLINE, null);
+//        MapReduceOutput out = collection.mapReduce(cmd);
+//        List<String> result = new ArrayList<>();
+//        for (DBObject o : out.results()) {
+//            result.add(o.toMap().values().toArray()[0].toString().split("\"")[3] + " date: "+
+//                    o.toMap().values().toArray()[0].toString().split("\"")[7]+ " count: "+
+//                    o.toMap().values().toArray()[1].toString().split(": ")[1].replaceAll("}", ""));
+//        }
+//        return result;
+//    }
 }

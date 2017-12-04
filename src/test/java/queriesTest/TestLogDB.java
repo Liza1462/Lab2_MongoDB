@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
 public class TestLogDB {
 
     public static LogsDB testdb = new LogsDB("logDB");
-    public static  MongoCollection<org.bson.Document> logs = testdb.getCollection("testLogs1");
+    public static MongoCollection<Document> logs = testdb.getCollection("testLogs1");
     public static DBCollection logs2 = testdb.getCollectionMR("testLogs1");
 
     public static void insert() throws IOException{
